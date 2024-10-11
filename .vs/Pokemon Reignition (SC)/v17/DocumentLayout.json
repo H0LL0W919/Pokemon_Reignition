@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\battle\\battlesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\battle\\battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\assets\\scripts\\pokemonrx\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemonrx\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\assets\\scripts\\pokemonrx\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemonrx\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BattleUnit.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleUnit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleUnit.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleUnit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleUnit.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowEUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T19:28:51.953Z",
+              "WhenOpened": "2024-10-11T20:47:23.658Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BattleSystem.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswEgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T20:31:12.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PokemonBase.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T20:26:12.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\Pokemon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PokemonRx\\Pokemon.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\Pokemon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PokemonRx\\Pokemon.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T20:25:17.484Z"
             }
           ]
         }

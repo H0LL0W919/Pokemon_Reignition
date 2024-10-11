@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //Testing Source Control :)
     [Header("Movement Settings")]
     public float movementSpeed;
     private bool isMoving;
