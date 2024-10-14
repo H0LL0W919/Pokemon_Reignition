@@ -28,4 +28,22 @@ public class MoveBase : ScriptableObject
     public int Accuracy { get { return accuracy; } }
     public int PP { get { return pp; } }
 
+    public bool IsSpecial
+    {
+        get 
+        {
+            if (type == PokemonType.Fire || type == PokemonType.Water || type == PokemonType.Grass
+                    || type == PokemonType.Ice || type == PokemonType.Electric || type == PokemonType.Dragon
+                        || type == PokemonType.Dark || type == PokemonType.Psychic || type == PokemonType.Fairy)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
 }
+
+

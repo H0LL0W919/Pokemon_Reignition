@@ -52,9 +52,12 @@ public class Pokemon
             Fainted = false
         };
 
+        float attack = (move.Base.IsSpecial) ? attacker.SpAttack : attacker.Attack; // ? + : allows shorthand if else statement
+        float defence = (move.Base.IsSpecial) ? SpDefence : Defence;
+
         float modifiers = Random.Range(0.85f, 1f) * type * critical;
         float a = (2 * attacker.Level + 10) / 250f;
-        float d = a * move.Base.Power * ((float)attacker.Attack / Defence) + 2;
+        float d = a * move.Base.Power * ((float)attack / defence) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
         HP -= damage;
