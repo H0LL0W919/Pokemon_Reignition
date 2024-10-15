@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Pokemon 
 {
-    public PokemonBase Base { get; set; }
-    public int Level { get; set; }
+    [SerializeField] PokemonBase _base;
+    [SerializeField] int level;
+
+    public PokemonBase Base { get { return _base; } }
+    public int Level { get { return level; } }
 
     public int HP {  get; set; }
     public List<Move> Moves { get; set; }
 
-    public Pokemon(PokemonBase pBase, int pLevel)
+    public void Initialisation()
     {
-        Base = pBase;
-        Level = pLevel;
         HP = MaxHp;
 
         // Adding moves to Pokemon move list, breaks loop if pokemon already has 4 moves.

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2b311e9c89007468e1c7c783fe352e, type: 3}
+  m_Name: Caterpie
+  m_EditorClassIdentifier: 
+  name: Caterpie
+  description: 
+  frontSprite: {fileID: 21300000, guid: 9dde895b7ebcd0747b107f78bc724328, type: 3}
+  backSprite: {fileID: 21300000, guid: 0831bf37a154f2c449146734de9cfcc2, type: 3}
+  type1: 1
+  type2: 0
+  maxHp: 45
+  attack: 30
+  defence: 35
+  spAttack: 20
+  spDefence: 20
+  speed: 45
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3595ae49833ea73458770ab273a96027, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 4ea6b405d3b5a9f4dbfb091f5ae19472, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8223f68da4b8eb94f8b08405cdcc0398, type: 2}
+    level: 9
