@@ -12,6 +12,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud playerHud;
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
+    [SerializeField] PartyScreen partyScreen;
 
     public event Action <bool> BattleOver;
 
@@ -36,6 +37,8 @@ public class BattleSystem : MonoBehaviour
         playerHud.SetData(playerUnit.Pokemon);
         enemyHud.SetData(enemyUnit.Pokemon);
 
+        partyScreen.Init();
+
         dialogBox.SetMoveNames(playerUnit.Pokemon.Moves);
 
         yield return dialogBox.TypeDialog($"A wild {enemyUnit.Pokemon.Base.Name} appeared!");
@@ -47,8 +50,14 @@ public class BattleSystem : MonoBehaviour
     void PlayerAction()
     {
         state = BattleState.PlayerAction;
-        StartCoroutine(dialogBox.TypeDialog("Select an action!"));
-       dialogBox.EnableActionSelector(true);
+        dialogBox.SetDialog("Select an action!");
+        dialogBox.EnableActionSelector(true);
+    }
+
+    void OpenPartyScreen()
+    {
+        partyScreen.SetPartyData(playerParty.Pokemons);
+        partyScreen.gameObject.SetActive(true);
     }
 
     void PlayerMove()
@@ -77,7 +86,7 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted)
         {
-            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} has fainted!");
+            yield return dialogBox.TypeDialog($"The enemy {enemyUnit.Pokemon.Base.Name} has fainted!");
             enemyUnit.PlayFaintAnimation();
 
             yield return new WaitForSeconds(2f);
@@ -108,7 +117,7 @@ public class BattleSystem : MonoBehaviour
 
         if (damageDetails.Fainted)
         {
-            yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} has fainted!");
+            yield return dialogBox.TypeDialog($"Oh no! {playerUnit.Pokemon.Base.Name} has fainted!");
             playerUnit.PlayFaintAnimation();
 
             yield return new WaitForSeconds(2f);
@@ -180,7 +189,7 @@ public class BattleSystem : MonoBehaviour
 
         dialogBox.UpdateActionSelection(currentAction);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Z))
         {
             if (currentAction == 0)
             {
@@ -189,7 +198,16 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1)
             {
-                //Pokemon
+                //Bag
+            }
+            else if(currentAction == 2)
+            {
+                //Pokemon 
+                OpenPartyScreen();
+            }
+            else if(currentAction == 3)
+            {
+                //Run
             }
         }
 
@@ -198,34 +216,31 @@ public class BattleSystem : MonoBehaviour
     void HandleMoveSelection()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-        {
-            if (currentMove < playerUnit.Pokemon.Moves.Count - 1)
-                ++currentMove;
-        }
+            ++currentMove;
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-        {
-            if (currentMove > 0)
-                --currentMove;
-        }
+            --currentMove;
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            if (currentMove < playerUnit.Pokemon.Moves.Count - 2)
-                currentMove += 2;
-        }
+            currentMove += 2;
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-        {
-            if (currentMove > 1)
-                currentMove -= 2;
-        }
+            currentMove -= 2;
+
+        currentMove = Mathf.Clamp(currentMove, 0, playerUnit.Pokemon.Moves.Count - 1);
 
         dialogBox.UpdateMoveSelection(currentMove, playerUnit.Pokemon.Moves[currentMove]);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Z))
         {
             dialogBox.EnableMoveSelector(false);
             dialogBox.EnableDialogText(true);
             StartCoroutine(PerformPlayerMove());
         }
+        else if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.X))
+        {
+            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            PlayerAction();
+        }
+
 
     }
 
