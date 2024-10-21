@@ -41570,6 +41570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Party Member
       objectReference: {fileID: 0}
+    - target: {fileID: 3395624816523920335, guid: 511b02e208925d54cb093911e2a94c95, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3526165715780199299, guid: 511b02e208925d54cb093911e2a94c95, type: 3}
       propertyPath: m_Color.b
       value: 1
