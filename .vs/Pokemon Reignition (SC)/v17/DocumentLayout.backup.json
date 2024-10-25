@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemonrx\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemonrx\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemons\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemons\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemonrx\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemonrx\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\data\\conditionsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\conditionsdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemonrx\\movebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemonrx\\movebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemons\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemons\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemons\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemons\\pokemonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\pokemons\\movebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokemons\\movebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\battle\\battlehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlehud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PokemonBase.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\PokemonBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokemons\\PokemonBase.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\PokemonBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pokemons\\PokemonBase.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwHEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T16:04:31.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BattleHud.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleHud.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleHud.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleHud.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleHud.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwBsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:24:58.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\Pokemon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokemons\\Pokemon.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\Pokemon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pokemons\\Pokemon.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAYwJwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:56:39.243Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,48 +87,48 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystem.cs",
               "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Battle\\BattleSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystem.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAUwHcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAO8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T23:28:29.242Z",
+              "WhenOpened": "2024-10-25T14:54:47.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MoveBase.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\MoveBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PokemonRx\\MoveBase.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\MoveBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PokemonRx\\MoveBase.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCMAAAA3AAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\MoveBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokemons\\MoveBase.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\MoveBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pokemons\\MoveBase.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T23:03:37.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pokemon.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\Pokemon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PokemonRx\\Pokemon.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\Pokemon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PokemonRx\\Pokemon.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwFgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T22:20:51.609Z",
+              "WhenOpened": "2024-10-25T14:52:51.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PokemonBase.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PokemonRx\\PokemonBase.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwFgAAAAJAAAAAAAAAA==",
+              "Title": "ConditionsDB.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Data\\ConditionsDB.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ConditionsDB.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Data\\ConditionsDB.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\ConditionsDB.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T22:18:36.568Z",
+              "WhenOpened": "2024-10-25T14:46:04.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Condition.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\Condition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokemons\\Condition.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Pokemons\\Condition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pokemons\\Condition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:43:20.325Z",
               "EditorCaption": ""
             }
           ]

@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66112df39f498104b806c052a7226aab, type: 3}
-  m_Name: Flare Blitz
+  m_Name: Poison Powder
   m_EditorClassIdentifier: 
-  name: Flare Blitz
-  description: Attacker takes recoil damage
-  type: 7
-  power: 120
-  accuracy: 100
-  pp: 15
-  category: 1
+  name: Poison Powder
+  description: 
+  type: 14
+  power: 0
+  accuracy: 75
+  pp: 35
+  category: 2
   effects:
     boosts: []
+    status: 1
   target: 0

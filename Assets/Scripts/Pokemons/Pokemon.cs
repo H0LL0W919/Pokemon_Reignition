@@ -17,6 +17,11 @@ public class Pokemon
     public Dictionary<Stat, int> Stats { get; private set; }
     public Dictionary<Stat, int> StatBoosts { get; private set; }
 
+    public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+    public Condition Status {  get; private set; }
+    public int StatusTime { get; set; }
+    public bool HpChanged { get; set; }
+
     public void Init()
     {
         // Adding moves to Pokemon move list, breaks loop if pokemon already has 4 moves.
@@ -33,15 +38,7 @@ public class Pokemon
         CalculateStats();
         HP = MaxHp;
 
-        StatBoosts = new Dictionary<Stat, int>()
-        {
-            {Stat.Speed, 0},
-            {Stat.Attack, 0},
-            {Stat.Defence, 0},
-            {Stat.SpAttack, 0},
-            {Stat.SpDefence, 0},
-        };
-      
+        ResetStatBoost();
     }
 
     void CalculateStats()
@@ -54,6 +51,18 @@ public class Pokemon
         Stats.Add(Stat.SpDefence, Mathf.FloorToInt((Base.SpDefence * Level) / 100f) + 5);   
 
         MaxHp = Mathf.FloorToInt((Base.MaxHp * Level) / 100f) + 10;
+    }
+
+    void ResetStatBoost()
+    {
+        StatBoosts = new Dictionary<Stat, int>()
+        {
+            {Stat.Speed, 0},
+            {Stat.Attack, 0},
+            {Stat.Defence, 0},
+            {Stat.SpAttack, 0},
+            {Stat.SpDefence, 0},
+        };
     }
 
     int GetStat(Stat stat)
@@ -86,8 +95,14 @@ public class Pokemon
 
             StatBoosts[stat] = Mathf.Clamp(StatBoosts[stat] + boost, -6, 6);
 
-            Debug.Log($"{stat} has been boosted to {StatBoosts[stat]}");
-
+            if (boost > 0)
+            {
+                StatusChanges.Enqueue($"{Base.Name}'s {stat} rose!");
+            }
+            else
+            {
+                StatusChanges.Enqueue($"{Base.Name}'s {stat} fell!");
+            }
         }
     }
 
@@ -103,8 +118,10 @@ public class Pokemon
     {
         float critical = 1f;
         if (Random.value * 100f <= 6.25f)
+        {
             critical = 2f;
-
+        }
+            
         float type = TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type1) * TypeChart.GetEffectiveness(move.Base.Type, this.Base.Type2);
 
         var damageDetails = new DamageDetails()
@@ -122,21 +139,52 @@ public class Pokemon
         float d = a * move.Base.Power * ((float)attack / defence) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        HP -= damage;
-        if (HP <= 0)
-        {
-            HP = 0;
-            damageDetails.Fainted = true;
-        }
+       UpdateHP(damage);
 
         return damageDetails;
 
+    }
+
+    public void UpdateHP(int damage)
+    {
+        HP = Mathf.Clamp(HP - damage, 0, MaxHp);
+        HpChanged = true;
+    }
+
+    public void SetStatus(ConditionID conditionId)
+    {
+        Status = ConditionsDB.Conditions[conditionId];
+        Status?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+    }
+
+    public void CureStatus()
+    {
+        Status = null;
     }
 
     public Move GetRandomMove()
     {
         int r = Random.Range(0, Moves.Count);
         return Moves[r];
+    }
+
+    public bool OnBeforeMove()
+    {
+        if (Status?.OnBeforeMove != null)
+        {
+            return Status.OnBeforeMove(this);
+        }
+        return true;
+    }
+    public void OnAfterTurn()
+    {
+        Status?.OnAfterTurn?.Invoke(this);  //Will only work if event != null
+    }
+
+    public void OnBattleOver()
+    {
+        ResetStatBoost();
     }
 
 }
