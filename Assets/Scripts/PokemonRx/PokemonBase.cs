@@ -80,6 +80,15 @@ public enum PokemonType   //
     Water
 }
 
+public enum Stat
+{
+    Attack,
+    Defence,
+    SpAttack,
+    SpDefence,
+    Speed
+}
+
 public class TypeChart
 {
     static float[][] chart =

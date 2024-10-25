@@ -13,7 +13,7 @@ public class PokemonParty : MonoBehaviour
     {
         foreach (var pokemon in pokemons)
         {
-            pokemon.Initialisation();
+            pokemon.Init();
         }
     }
 
