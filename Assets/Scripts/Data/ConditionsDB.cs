@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class ConditionsDB 
 {
+
+    public static void Init()
+    {
+        foreach (var kvp in Conditions)
+        {
+            var conditionId = kvp.Key;
+            var condition = kvp.Value;
+
+            condition.Id = conditionId;
+        }
+    }
+
     public static Dictionary<ConditionID, Condition> Conditions { get; set; } = new Dictionary<ConditionID, Condition>()
     {
         {
@@ -105,12 +117,50 @@ public class ConditionsDB
                 }
 
             }
-        }
+        },
+        //Volatile Status Conditions
 
+        {
+            ConditionID.confusion,
+            new Condition()
+            {
+                Name = "Confusion",
+                StartMessage = "has been confused!",
+                OnStart = (Pokemon pokemon) =>
+                {
+                    //confused for 1-4 turns
+                    pokemon.VolatileStatusTime = Random.Range(1, 5);
+                    Debug.Log($"Will be confused for {pokemon.VolatileStatusTime} moves");
+                },
+                OnBeforeMove = (Pokemon pokemon) =>
+                {
+                    if (pokemon.VolatileStatusTime <= 0)
+                    {
+                        pokemon.CureVolatileStatus();
+                        pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} snapped out of it's confusion!");
+                        return true;
+                    }
+                    pokemon.VolatileStatusTime--;
+
+                    // 50% chance to perform a move!
+                    if (Random.Range(1, 3) == 1)
+                    {
+                        return true;
+                    }
+
+                    //Hurt by confusion
+                    pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} is confused!");
+                    pokemon.UpdateHP(pokemon.MaxHp / 8);
+                    pokemon.StatusChanges.Enqueue($"{pokemon.Base.Name} hurt itself in it's confusion!");
+                    return false;
+                }
+            }
+        }
     };
 }
 
 public enum ConditionID
 {
-    none, psn, brn, slp, par, frz  //Poison, Burn, Sleep, Paralyze, Freeze
+    none, psn, brn, slp, par, frz,
+    confusion,
 }

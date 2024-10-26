@@ -11,5 +11,6 @@ public class Condition
    public Action<Pokemon> OnAfterTurn {  get; set; }
     public Func<Pokemon, bool> OnBeforeMove { get; set; }
     public Action<Pokemon> OnStart { get; set; }
+    public ConditionID Id { get; set; }
 
 }
