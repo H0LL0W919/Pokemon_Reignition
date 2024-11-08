@@ -69,6 +69,8 @@ public class Pokemon
             {Stat.Defence, 0},
             {Stat.SpAttack, 0},
             {Stat.SpDefence, 0},
+            {Stat.Accuracy, 0},
+            {Stat.Evasion, 0},
         };
     }
 
@@ -203,14 +205,14 @@ public class Pokemon
 
         if (Status?.OnBeforeMove != null)
         {
-            if (!Status.OnBeforeMove(this));
+            if (!Status.OnBeforeMove(this))
             {
                 canPerformMove = false;
             }
         }
         if (VolatileStatus?.OnBeforeMove != null)
         {
-            if (!VolatileStatus.OnBeforeMove(this)) ;
+            if (!VolatileStatus.OnBeforeMove(this)) 
             {
                 canPerformMove = false;
             }
