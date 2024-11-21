@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [Header("Collision Variables")]
     public LayerMask solidObjectLayer;
     public LayerMask grassLayer;
+    public LayerMask interactableLayer;
 
     public event Action OnEncounter;
 
@@ -52,6 +53,28 @@ public class PlayerController : MonoBehaviour
         
         animator.SetBool("isMoving", isMoving);
 
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Z))
+        {
+            Interact();
+        }
+
+    }
+
+    void Interact()
+    {
+        //finding out which direction the player is facing using the animation floats
+        var facingDirection = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        //The position of the tile directing in front of the player's face
+        var interactPos = transform.position + facingDirection;
+
+        //Debug.DrawLine(transform.position, interactPos, Color.green, 0.5f);
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
+
+        if (collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
+        }
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -73,7 +96,7 @@ public class PlayerController : MonoBehaviour
         
     private bool IsWalkable (Vector3 targetPos)
     {
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer) != null) 
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer | interactableLayer) != null) 
         {
             return false;
         }
