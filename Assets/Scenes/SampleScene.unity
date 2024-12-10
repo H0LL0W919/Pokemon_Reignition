@@ -40500,8 +40500,8 @@ GameObject:
   - component: {fileID: 1936538581}
   - component: {fileID: 1936538580}
   - component: {fileID: 1936538579}
-  - component: {fileID: 1936538582}
   - component: {fileID: 1936538583}
+  - component: {fileID: 1936538584}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -40599,27 +40599,6 @@ Transform:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1936538582
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936538578}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43121fd91e325a94d9e27a8eb86e64bc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1936538583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40639,6 +40618,38 @@ MonoBehaviour:
     level: 7
   - _base: {fileID: 11400000, guid: bfcdfaa32b71b0d448423a933fc63c57, type: 2}
     level: 7
+--- !u!114 &1936538584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936538578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdfd43d2a1f9d24aacec0605d28832d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: -197977541, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 443077439, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: -1387813809, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: -1940725562, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  walkUpSprites:
+  - {fileID: -1512564212, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1634186354, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: -684951591, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 173741164, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  walkRightSprites:
+  - {fileID: -966587714, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1164385954, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1664228951, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1113994800, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  walkLeftSprites:
+  - {fileID: -2053999263, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: -88967543, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1130865280, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+  - {fileID: 1873002385, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
 --- !u!1 &1960234281
 GameObject:
   m_ObjectHideFlags: 0

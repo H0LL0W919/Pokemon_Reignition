@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\characters\\characteranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\characteranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\characters\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\assets\\scripts\\characters\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\gameplay\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\gameplay\\game controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\game controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\gameplay\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\assets\\scripts\\gameplay\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\assets\\scripts\\characters\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|d:\\unity\\unity projects\\pokemon reignition (sc)\\assets\\scripts\\utility\\spriteanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18053FBD-BF8E-0ED7-5033-AD7E8FAF799F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utility\\spriteanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Game Controller.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Game Controller.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Game Controller.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Game Controller.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Game Controller.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T18:21:55.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dialog.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Dialog.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Dialog.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Dialog.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Dialog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T18:02:17.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DialogManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\DialogManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\DialogManager.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\DialogManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\DialogManager.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T18:00:02.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Interactable.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Interactable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Interactable.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Gameplay\\Interactable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Interactable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:38:58.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NPCController.cs",
-              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\NPCController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\NPCController.cs",
-              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\NPCController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Characters\\NPCController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:37:15.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\PlayerController.cs",
               "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Characters\\PlayerController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAYwEsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwHAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T20:36:58.833Z"
+              "WhenOpened": "2024-12-10T22:42:37.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterAnimator.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\CharacterAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\CharacterAnimator.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\CharacterAnimator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Characters\\CharacterAnimator.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T22:21:37.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpriteAnimator.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Utility\\SpriteAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utility\\SpriteAnimator.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Utility\\SpriteAnimator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utility\\SpriteAnimator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T21:55:17.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NPCController.cs",
+              "DocumentMoniker": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\NPCController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\NPCController.cs",
+              "ToolTip": "D:\\Unity\\Unity Projects\\Pokemon Reignition (SC)\\Assets\\Scripts\\Characters\\NPCController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Characters\\NPCController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:37:15.152Z",
+              "EditorCaption": ""
             }
           ]
         }
