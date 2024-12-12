@@ -31340,6 +31340,7 @@ GameObject:
   - component: {fileID: 1835908962}
   - component: {fileID: 1835908961}
   - component: {fileID: 1835908963}
+  - component: {fileID: 1835908964}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -31359,7 +31360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706c3a345caf22a47b9157ea69a97aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 1936538579}
+  playerController: {fileID: 1936538586}
   battleSystem: {fileID: 756060098}
   mainCamera: {fileID: 519420031}
 --- !u!4 &1835908962
@@ -31392,6 +31393,27 @@ MonoBehaviour:
   dialogBox: {fileID: 1348333822}
   dialogText: {fileID: 1165107882}
   lettersPerSecond: 45
+--- !u!114 &1835908964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835908960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d2bfa36ecad34429ad5838d01c5b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solidObjectLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  grassLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &1846551570
 GameObject:
   m_ObjectHideFlags: 0
@@ -40499,9 +40521,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1936538581}
   - component: {fileID: 1936538580}
-  - component: {fileID: 1936538579}
+  - component: {fileID: 1936538586}
   - component: {fileID: 1936538583}
   - component: {fileID: 1936538584}
+  - component: {fileID: 1936538585}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -40509,28 +40532,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1936538579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936538578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b569431a6b645d24484047d246b2e318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 5
-  solidObjectLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  grassLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!212 &1936538580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40650,6 +40651,31 @@ MonoBehaviour:
   - {fileID: -88967543, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
   - {fileID: 1130865280, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
   - {fileID: 1873002385, guid: e7adcb5dab2cf014ca024f614a66767f, type: 3}
+--- !u!114 &1936538585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936538578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670ddcafebf8f3648b9aa972702d0000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+--- !u!114 &1936538586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936538578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b569431a6b645d24484047d246b2e318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960234281
 GameObject:
   m_ObjectHideFlags: 0
@@ -40744,6 +40770,8 @@ GameObject:
   - component: {fileID: 2057617409}
   - component: {fileID: 2057617408}
   - component: {fileID: 2057617410}
+  - component: {fileID: 2057617412}
+  - component: {fileID: 2057617411}
   m_Layer: 10
   m_Name: NPC
   m_TagString: Untagged
@@ -40906,6 +40934,57 @@ MonoBehaviour:
     lines:
     - Hey!  Are you a Pokemon Trainer?
     - Be careful walking through long grass, a Pokemon might attack you!
+  movementPattern:
+  - {x: 1, y: 0}
+  - {x: 0, y: -5}
+  - {x: -1, y: 0}
+  - {x: 0, y: 5}
+  timeBetweenPattern: 5
+--- !u!114 &2057617411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057617405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdfd43d2a1f9d24aacec0605d28832d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: 1405168446, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -1137269109, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 432920203, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1705084118, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkUpSprites:
+  - {fileID: -1670485930, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 8036330, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -1049534882, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1787723413, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkRightSprites:
+  - {fileID: 510637303, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 724934844, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 153607491, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -160149724, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkLeftSprites:
+  - {fileID: -487746621, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 565143811, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -196874157, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1839370359, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+--- !u!114 &2057617412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057617405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670ddcafebf8f3648b9aa972702d0000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
 --- !u!1 &2087570888
 GameObject:
   m_ObjectHideFlags: 0

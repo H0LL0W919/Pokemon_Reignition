@@ -5,29 +5,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    public float movementSpeed;
-    private bool isMoving;
     private Vector2 input;
-    
-    
-    private CharacterAnimator animator;
-
-    [Header("Collision Variables")]
-    public LayerMask solidObjectLayer;
-    public LayerMask grassLayer;
-    public LayerMask interactableLayer;
+  
+    private Character character;
 
     public event Action OnEncounter;
 
     private void Awake()
     {
-        animator = GetComponent<CharacterAnimator>();
+        character = GetComponent<Character>();
     }
 
     public void HandleUpdate()
     {
-        if (! isMoving)
+        if (!character.IsMoving)   
         {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
@@ -37,21 +28,11 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                animator.MoveX = input.x;
-                animator.MoveY = input.y;
-
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-
-                if (IsWalkable(targetPos))
-                {
-                    StartCoroutine(Move(targetPos));
-                }
+                StartCoroutine(character.Move(input, CheckForEncounters));
             }
         }
-        
-        animator.IsMoving = isMoving;
+
+        character.HandleUpdate();
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Z))
         {
@@ -63,13 +44,13 @@ public class PlayerController : MonoBehaviour
     void Interact()
     {
         //finding out which direction the player is facing using the animation floats
-        var facingDirection = new Vector3(animator.MoveX, animator.MoveY);
+        var facingDirection = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         //The position of the tile directing in front of the player's face
         var interactPos = transform.position + facingDirection;
 
         //Debug.DrawLine(transform.position, interactPos, Color.green, 0.5f);
 
-        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.InteractableLayer);
 
         if (collider != null)
         {
@@ -77,40 +58,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Move(Vector3 targetPos)
-    {
-        isMoving = true;
-
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, movementSpeed * Time.deltaTime);
-            yield return null;
-        }
-        transform.position = targetPos;
-
-        isMoving = false;
-
-        CheckForEncounters();
-
-    }
-        
-    private bool IsWalkable (Vector3 targetPos)
-    {
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectLayer | interactableLayer) != null) 
-        {
-            return false;
-        }
-
-        return true;
-    }
-
     private void CheckForEncounters()
     {
-        if  (Physics2D.OverlapCircle(transform.position, 0.2f, grassLayer) != null)
+        if  (Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.GrassLayer) != null)
         {
             if (UnityEngine.Random.Range(1, 101) <= 10)
             {
-                animator.IsMoving = false;
+                character.Animator.IsMoving = false;
                 OnEncounter();
             }
         }
