@@ -27,7 +27,7 @@ public class Character : MonoBehaviour
         targetPos.x += moveVec.x;
         targetPos.y += moveVec.y;
 
-        if (!IsWalkable(targetPos))
+        if (!IsPathClear(targetPos))
             yield break;
 
         IsMoving = true;
@@ -50,6 +50,19 @@ public class Character : MonoBehaviour
         animator.IsMoving = IsMoving;
     }
 
+    private bool IsPathClear(Vector3 targetPos) //creates a box cast from players current pos to targetPos - checking if all tiles are walkable
+    {
+        var difference = targetPos - transform.position;
+        var direction = difference.normalized;
+                                        // adding direction to make sure box cast starts from next tile to avoid colliding with character collision
+        if (Physics2D.BoxCast(transform.position + direction, new Vector2(0.2f, 0.2f), 0f, direction, difference.magnitude - 1, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer) == true)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     private bool IsWalkable(Vector3 targetPos)
     {
         if (Physics2D.OverlapCircle(targetPos, 0.2f, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer) != null)
@@ -58,6 +71,22 @@ public class Character : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void LookTowards(Vector3 targetPos)
+    {
+        var xDiff = Mathf.Floor(targetPos.x) - Mathf.Floor(transform.position.x);
+        var yDiff = Mathf.Floor(targetPos.y) - Mathf.Floor(transform.position.y);
+
+        if (xDiff == 0 || yDiff == 0)
+        {
+            animator.MoveX = Mathf.Clamp(xDiff, -1f, 1f);
+            animator.MoveY = Mathf.Clamp(yDiff, -1f, 1f);
+        }
+        else
+        {
+            Debug.LogError("Character's can't face diagonally");
+        }
     }
 
     public CharacterAnimator Animator { get => animator; }

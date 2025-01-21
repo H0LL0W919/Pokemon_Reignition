@@ -2253,6 +2253,234 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6080951289664509641, guid: 511b02e208925d54cb093911e2a94c95, type: 3}
   m_PrefabInstance: {fileID: 1071505876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1119945744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1119945751}
+  - component: {fileID: 1119945750}
+  - component: {fileID: 1119945749}
+  - component: {fileID: 1119945748}
+  - component: {fileID: 1119945747}
+  - component: {fileID: 1119945746}
+  - component: {fileID: 1119945745}
+  m_Layer: 10
+  m_Name: NPC (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1119945745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdfd43d2a1f9d24aacec0605d28832d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: 1405168446, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -1137269109, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 432920203, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1705084118, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkUpSprites:
+  - {fileID: -1670485930, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 8036330, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -1049534882, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1787723413, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkRightSprites:
+  - {fileID: 510637303, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 724934844, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 153607491, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -160149724, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  walkLeftSprites:
+  - {fileID: -487746621, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 565143811, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: -196874157, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  - {fileID: 1839370359, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+--- !u!114 &1119945746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670ddcafebf8f3648b9aa972702d0000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+--- !u!114 &1119945747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaef7a4cf3d5a9848ac52a4b48b8e2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    lines:
+    - Hey!  Are you a Pokemon Trainer?
+    - Be careful walking through long grass, a Pokemon might attack you!
+  movementPattern:
+  - {x: 1, y: 0}
+  - {x: 0, y: -5}
+  - {x: -1, y: 0}
+  - {x: 0, y: 5}
+  timeBetweenPattern: 5
+--- !u!61 &1119945748
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0049515963, y: -0.03961575}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7325928, y: 1.128453}
+  m_EdgeRadius: 0
+--- !u!50 &1119945749
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &1119945750
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1976315937
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1405168446, guid: 9eb0808e8cd509a45863327d7f52e2f4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1119945751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 3.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120799546
 GameObject:
   m_ObjectHideFlags: 0
@@ -31414,6 +31642,9 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 1024
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &1846551570
 GameObject:
   m_ObjectHideFlags: 0
@@ -40525,7 +40756,9 @@ GameObject:
   - component: {fileID: 1936538583}
   - component: {fileID: 1936538584}
   - component: {fileID: 1936538585}
-  m_Layer: 0
+  - component: {fileID: 1936538588}
+  - component: {fileID: 1936538587}
+  m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40676,6 +40909,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b569431a6b645d24484047d246b2e318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1936538587
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936538578}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0048529804, y: -0.06309253}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8155753, y: 1.3108362}
+  m_EdgeRadius: 0
+--- !u!50 &1936538588
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936538578}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1960234281
 GameObject:
   m_ObjectHideFlags: 0
@@ -40840,7 +41145,7 @@ Transform:
   m_GameObject: {fileID: 2057617405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 3.8, z: 0}
+  m_LocalPosition: {x: 1.5, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40935,11 +41240,9 @@ MonoBehaviour:
     - Hey!  Are you a Pokemon Trainer?
     - Be careful walking through long grass, a Pokemon might attack you!
   movementPattern:
-  - {x: 1, y: 0}
-  - {x: 0, y: -5}
-  - {x: -1, y: 0}
   - {x: 0, y: 5}
-  timeBetweenPattern: 5
+  - {x: 0, y: -5}
+  timeBetweenPattern: 2.5
 --- !u!114 &2057617411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41303,4 +41606,5 @@ SceneRoots:
   - {fileID: 638721259}
   - {fileID: 1835908962}
   - {fileID: 2057617407}
+  - {fileID: 1119945751}
   - {fileID: 170970984}
